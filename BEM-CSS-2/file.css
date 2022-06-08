@@ -1,0 +1,99 @@
+/* Google Font adalah salah satu layanan yang disediakan Google untuk memudahkan web developer dalam menghasilkan desain yang menarik dengan meyediakan font-font gratis. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;                           /* margin digunakan untuk mengaplikasikan jarak tepi pada sebuah elemen bagian luar (tepi garis luar).  */
+    padding: 0;                          /* Padding digunakan untuk memberikan ruang space disekitar elemen atau konten. */
+    box-sizing: border-box;              /* Dengan properti ini Anda bisa menggunakannya untuk membuat suatu box elemen memiliki width dan height tetap dalam ukuran aslinya meski pun didalamnya terdapat properti padding dan border. */
+}
+
+body{
+    width: 100%;
+    height: 100vh;                      /* 100vh artinya (Bergantung pada ukuran layar) adalah height yang kita tentukan 100% dari height induknya. */
+    display: flex;                      /* Flex (flexibel) adalah salah satu super power display dari CSS3. Memungkinkan untuk pengaturan layout, posisi dan tampilan dari suatu konten yang ukurannya belum diketahui atau bernilai dinamis. Oleh sebab itu, nilai ini dinamakan Flex diambil dari kata flexibel yang berarti mudah diatur, disesuaikan dan ditukar-tukar. */
+    justify-content: center;            /* justify-content digunakan untuk mensejajarkan item-item diantara flexbox agar container dari flexbox tersebut bisa mendistribusikan ruang kosong yang tersisa. Center disini artinya ke tengah. */
+    align-items: center;                /* align-items mendefinisikan bagaimana item-item pada container flex tersebut diletakkan sepanjang garis tegak lurus pada sumbu utama (cross-axis). */
+    font-family: "Poppins", sans-serif; /* font-family merupakan properti yang digunakan untuk menentukan dan merubah jenis font yang digunakan pada teks. */
+    background: #88bde5;
+    color:rgb(26, 21, 15);
+}
+
+section {
+    width: 1050px;                    /* Memberikan lebar pada suatu elemen */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;               /* Membuat card ke tengah */
+    justify-content: space-between;
+    gap: 2rem;                        /* gap memberikan jarak antar kolom yang telah kita bagi dengan fungsi column-count  */
+}
+
+/* Blok */
+.card{
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;        /* Border Radius merupakan properti untuk membuat suatu element memiliki tepian yang elips atau umumnya disebut sudut lengkungan */
+    width: 300px;
+    min-height: 400px;          /* Minimal tinggi */
+    position: relative;         /* Nilai relative memungkinkan posisi elemen berhubungan dengan wadah div nya */
+    /* Properti box-shadow digunakan untuk membuat bayangan untuk kotak atau elemen kontainer. */
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card--big {            /* Menggunakan Modifier di Blok */
+    width: 350px;
+    min-height: 475px;
+}
+
+.card__icon { 
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bddbf1;
+    margin: 1.5rem auto;
+    border-radius: 50%;
+}
+
+.card__icon i{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card__info{
+    padding: 0 1.5rem;
+}
+
+.card__info p{
+    margin: 1rem 0;
+    color: #6b7881
+}
+
+.card__info span {
+    font-weight: 700;
+}
+
+.card__info h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card__akun{
+    width: 100%;
+    padding: 1rem;
+    background:rgb(246, 184, 217);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    color:#fcfdfd;
+}
+
+.card--active {                 /*Modifier*/
+    background:#98f896;
+}
+
+
